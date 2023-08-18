@@ -51,7 +51,7 @@ h1 {
     height: 180px;
 }
 
-@keyframes bounce {
+    @keyframes bounce {
     20% {
         transform: translateY(-6px);
     }
@@ -65,4 +65,4 @@ h1 {
     100% {
         transform: translateY(0);
     }
-}
+    }
