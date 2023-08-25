@@ -7,15 +7,63 @@
     <title>Quick's Pokedex</title>
     <link rel="stylesheet" href="app.css" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
 
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: wheat;
+        }
+
+        .active {
+            background-color: wheat;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="C:\Users\HPPC\Desktop\pokedex\CI_GBC_PokemonGoldAndSilver_CharaPikachu_image500w.jpg">
 </head>
 
 <body>
+    
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="https://ms.wikipedia.org/wiki/Sekolah_Menengah_Kebangsaan_Bukit_Jambul">School</a></li>
+    </ul>
+
     <div class="container">
         <h1>Quick's Pokedex</h1>
         <ol id="pokedex"></ol>
+        <script src="app.js"></script>
     </div>
-    <script src="app.js"></script>
 </body>
+
+<footer>
+    <p>Pokedex SMKBJ</p>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-55adb5fb-32e7-4c2c-b952-54c0d1f088ab"></div>
+</footer>
 
 </html>
