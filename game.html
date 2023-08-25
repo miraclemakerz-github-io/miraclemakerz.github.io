@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick's Pokedex</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+          -webkit-text-fill-color: black;
+        }
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="C:\Users\HPPC\Desktop\pokedex\CI_GBC_PokemonGoldAndSilver_CharaPikachu_image500w.jpg">
+</head>
+
+<body>
+    <style>
+    
+    </style>
+    <div class="navbar">
+        <a href="index.html">Pokedex</a>
+        <a href="game.html">Game</a>
+        <a href="about.html">About</a>
+      </div>
+    <p>              </p>
+    <div class="container">
+    <h1>Let's Play Some Game!</h1>
+    <h3>How to Play?</h3>
+    <button class="accordion">Player 1</button>
+<div class="panel">
+    <h4>---- move with keys A and D, jump with W</h4>
+    <h4>---- melee attack - C</h4>
+    <h4>---- special attack - X</h4>
+</div>
+
+<button class="accordion">Player 2</button>
+<div class="panel">
+    <h4>---- move with arrows, jump with arrow UP</h4>
+    <h4>---- melee attack - P</h4>
+    <h4>---- special attack - O</h4>
+</div>
+
+        <iframe src="https://scratch.mit.edu/projects/885849792/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+</body>
+
+<footer>
+    <p>Pokedex SMKBJ @ 2023</p>
+    <p>By: Miracle Makerz</p>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-55adb5fb-32e7-4c2c-b952-54c0d1f088ab"></div>
+</footer>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+</html>

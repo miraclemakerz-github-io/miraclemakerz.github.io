@@ -3,6 +3,11 @@ body {
     margin: 0;
     font-family: rubik;
     color: white;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+-moz-user-select: none;     /* Firefox all */
+-ms-user-select: none;      /* IE 10+ */
+-o-user-select: none;
+user-select: none;
 }
 
 .card {
@@ -67,9 +72,39 @@ h1 {
         transform: translateY(-0);
     }
 }
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
 
-ul{
-        position: fixed;
-        top: 0;
-        width: 100%;
+    footer {
+        text-align: center;
+        padding: 3px;
+        background-color: white;
+        color: black;
     }
