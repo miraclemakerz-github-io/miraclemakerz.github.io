@@ -38,4 +38,3 @@ const displayPokemon = (pokemon) => {
 };
 
 fetchPokemon();
-
