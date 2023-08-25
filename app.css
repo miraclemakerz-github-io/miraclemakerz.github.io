@@ -55,6 +55,7 @@ h1 {
 
 .card:hover {
     animation: bounce 0.5s linear;
+    cursor: pointer;
 }
 
 @keyframes bounce {
@@ -102,9 +103,43 @@ h1 {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
   }
 
-    footer {
-        text-align: center;
-        padding: 3px;
-        background-color: white;
-        color: black;
-    }
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: white;
+    color: black;
+}
+
+.popup{
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background: #f4f4f4;
+    opacity:0.95;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button{
+    background-color: orangered;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: transform 100ms;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 2 px darkred;
+}
